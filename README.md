@@ -1,6 +1,13 @@
 <h1 align="center"> 📚 Library Management System </h1>
 
-In this project, we create a **library database** for the users to borrow and return books from a made up library system called Daisy Library. 
+In this project, we create a **library database** for the users to borrow and return books from a made-up library system called Daisy Library. 
+
+### 📌 Required Modules:
+* tkinter
+* os
+* csv
+* sqlite3
+* webbrowser
 
 ### 📌 Main features:
 
@@ -20,3 +27,12 @@ In this project, we create a **library database** for the users to borrow and re
 
 * Some of the main features are hidden in a paned window. (*More options* button has to be clicked to see)
 * *About us* link to see the website of the made up Daisy Library System
+
+<hr>
+
+<h2 align='center' > 📖~☕ Main Features  </h2>
+
+**Main Layout**
+
+**Showing Books:**
+
