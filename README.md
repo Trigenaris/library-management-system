@@ -1,4 +1,4 @@
-<h1 align="center"> 📚 Library Management System </h1>
+<h1 align='center'> 📚 Library Management System </h1>
 
 In this project, we create a **library database** for the users to borrow and return books from a made-up library system called Daisy Library. 
 
@@ -58,13 +58,38 @@ If the system has no members in it, the user is informed by the warning message 
 
 #### More Options: 
 
-As the user clicks the *more options* button, a paned window appears on the window's right side with other buttons.
+As the user clicks the `More Options` button, a paned window appears on the main window's right side with other buttons.
 
 ![daisy_5](https://github.com/Trigenaris/library-management-system/assets/122381599/f0a7055d-cee7-4531-ad9b-89bf116e0eaf)
 
 #### More Options Layout:
 
+* Adding a book to the system
+* Removing a book by their name
+* Registering a new member to the system
+* Removing a member by their member ID
+* Lending a book to a member
+* Returning a book to the system
+* Adding multiple books to the system (only CSV files supported)
+* Registering multiple members to the system (only CSV files supported)
+* A URL linked to the website of the Daisy Library System
+
 ![daisy_7](https://github.com/Trigenaris/library-management-system/assets/122381599/b299e837-193f-46c1-b176-cf7742f8a5e4)
+
+#### 📘 ➕ 📚 Adding a Book:
+
+To do so; first, the user clicks the `Add Book` button:
+
+![daisy_8](https://github.com/Trigenaris/library-management-system/assets/122381599/8bcf2d7b-7079-4990-b798-8a1ff0f45e05)
+
+Then it is expected from the user to fill in the required information about the book:
+
+![daisy_10](https://github.com/Trigenaris/library-management-system/assets/122381599/0fd7cbb6-b2d1-41f4-970c-ed2422bdd438)
+
+An error message will be shown if the user does not fill in all the fields in the window:
+
+![daisy_12](https://github.com/Trigenaris/library-management-system/assets/122381599/9e1740b6-da62-42d9-9e21-c53e9e79c6d4)
+![daisy_13](https://github.com/Trigenaris/library-management-system/assets/122381599/f4ace495-aff3-45ae-a2ca-dfbd5e315d3e)
 
 
 
