@@ -91,6 +91,21 @@ An error message will be shown if the user does not fill in all the fields in th
 ![daisy_12](https://github.com/Trigenaris/library-management-system/assets/122381599/9e1740b6-da62-42d9-9e21-c53e9e79c6d4)
 ![daisy_13](https://github.com/Trigenaris/library-management-system/assets/122381599/f4ace495-aff3-45ae-a2ca-dfbd5e315d3e)
 
+As the user fills in all the fields; they will answer a question box if they are certain about the book's information. If the answer is yes, another message box informs the user:
+
+![daisy_14](https://github.com/Trigenaris/library-management-system/assets/122381599/623a2214-df61-422c-9e9d-77087bc10823)
+![daisy_15](https://github.com/Trigenaris/library-management-system/assets/122381599/964d6aca-717f-40b6-be23-a8edc2569a0b)
+![daisy_16](https://github.com/Trigenaris/library-management-system/assets/122381599/833669f9-284b-44fa-af9a-5db50373ce4a)
+
+#### 📖 ~ 📋 Show Books:
+
+The user can see the book when they click the `Show Books` button this time as the database has a book in the system now:
+
+![daisy_1](https://github.com/Trigenaris/library-management-system/assets/122381599/5cb26333-c9cd-4a16-acd6-945de6950120)
+![daisy_17](https://github.com/Trigenaris/library-management-system/assets/122381599/7c474023-7ac4-40e8-9405-1d9a8f600370)
+
+
+
 
 
 
