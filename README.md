@@ -104,8 +104,50 @@ The user can see the book when they click the `Show Books` button this time as t
 ![daisy_1](https://github.com/Trigenaris/library-management-system/assets/122381599/5cb26333-c9cd-4a16-acd6-945de6950120)
 ![daisy_17](https://github.com/Trigenaris/library-management-system/assets/122381599/7c474023-7ac4-40e8-9405-1d9a8f600370)
 
+#### 📚 ➖ 📘 Removing a Book:
 
+First, the user clicks the `Remove Book` button:
 
+![daisy_18](https://github.com/Trigenaris/library-management-system/assets/122381599/8237b737-c94a-425a-a69e-3e8a15413bf8)
+
+Then, the user writes down the name of the book that they want to remove, and after a confirmation, the referred book will be removed from the system:
+
+![daisy_19](https://github.com/Trigenaris/library-management-system/assets/122381599/d1a4db1d-f63f-4e91-97b5-eb1743cf1e0c)
+![daisy_20](https://github.com/Trigenaris/library-management-system/assets/122381599/b4009104-d813-4019-b72d-7eb99124d11e)
+![daisy_21](https://github.com/Trigenaris/library-management-system/assets/122381599/52fd5b2d-201e-4268-82b2-227ed3533540)
+
+#### 👤 ➕ 👥 Registering a Member:
+
+To do so; first; the user clicks the `Register Member` button:
+
+![daisy_18](https://github.com/Trigenaris/library-management-system/assets/122381599/9aa3bf89-3be8-4f42-9d1d-763551a23247)
+
+Then it is expected from the user to fill in the required information about the member:
+
+![daisy_22](https://github.com/Trigenaris/library-management-system/assets/122381599/3ca4fb83-a328-4019-bf67-91be7f2ce51d)
+
+After a confirmation, the member is added to the system:
+
+![daisy_23](https://github.com/Trigenaris/library-management-system/assets/122381599/af4362b6-e61f-4c33-9ed9-5927ab35a008)
+
+#### 👥 ~ 📋 Show Members:
+
+The user can see the member when they click the `Show Members` button this time as the database has a member in the system now:
+
+![daisy_3](https://github.com/Trigenaris/library-management-system/assets/122381599/34c24127-053d-484c-b185-c2591fe3700b)
+![daisy_24](https://github.com/Trigenaris/library-management-system/assets/122381599/96b5da4c-6669-4418-9d00-fa7eaa3ed287)
+
+#### 👥 ➖ 👤 Removing a Member:
+
+First, the user clicks the `Remove Member` button:
+
+![daisy_18](https://github.com/Trigenaris/library-management-system/assets/122381599/8237b737-c94a-425a-a69e-3e8a15413bf8)
+
+Then, the user writes down the member no of the referring member that they want to remove, and after confirmation, the referred member will be removed from the system:
+
+![daisy_25](https://github.com/Trigenaris/library-management-system/assets/122381599/994a09c0-f4b6-4ca3-aa88-f1c75e2c306c)
+![daisy_26](https://github.com/Trigenaris/library-management-system/assets/122381599/24d70104-0bb4-42d4-b092-13ebfdfa7755)
+![daisy_27](https://github.com/Trigenaris/library-management-system/assets/122381599/4a1f9920-4e3d-48ce-a1ea-2c75300c4e37)
 
 
 
