@@ -149,6 +149,58 @@ Then, the user writes down the member no of the referring member that they want 
 ![daisy_26](https://github.com/Trigenaris/library-management-system/assets/122381599/24d70104-0bb4-42d4-b092-13ebfdfa7755)
 ![daisy_27](https://github.com/Trigenaris/library-management-system/assets/122381599/4a1f9920-4e3d-48ce-a1ea-2c75300c4e37)
 
+#### 📘 ➡️ 👤 Lending a Book:
+
+First, the user clicks the `Lend Book` button:
+
+![daisy_28](https://github.com/Trigenaris/library-management-system/assets/122381599/b3fff220-2c41-49ef-a33f-6aa57cce2dc3)
+
+Then, the user writes down the name of the book and the member no of the member who wants to borrow the book:
+
+![daisy_29](https://github.com/Trigenaris/library-management-system/assets/122381599/54e1754b-06e5-48de-94bc-a3a8416f21c7)
+
+After a confirmation; the book is lent to the referred member:
+
+![daisy_30](https://github.com/Trigenaris/library-management-system/assets/122381599/617defff-721e-406d-8437-67502807d935)
+![daisy_31](https://github.com/Trigenaris/library-management-system/assets/122381599/412ac38d-c71a-4f50-bb1c-0b9b0d77d14e)
+
+The user can check the borrowed books from the `Show Lent Books` button:
+
+![daisy_32](https://github.com/Trigenaris/library-management-system/assets/122381599/0c10219d-3504-49c3-a09a-792882ff2fe3)
+![daisy_33](https://github.com/Trigenaris/library-management-system/assets/122381599/f3562b2b-9c1f-4945-adfc-01ccd9eb190b)
+
+#### 📘 ➡️ 📚 Returning a Book:
+
+As the user wants to return the book; first, click the `Return Book` button and enter the name of the book:
+
+![daisy_34](https://github.com/Trigenaris/library-management-system/assets/122381599/c7dfc7d2-830d-4aed-baa4-199623556ec3)
+
+#### 📗 ➕ 📘 ➕ 📚 Adding Multiple Books and Registering Multiple Members:
+
+The user can add multiple books or register multiple members if the appropriate **csv file** is imported. <br> Firstly, the user clicks the `Add Multiple Books` or `Add Multiple Members` button:
+
+![daisy_35](https://github.com/Trigenaris/library-management-system/assets/122381599/e9e4bb42-8e3e-430f-88aa-3aaeadfdcd0f)
+
+Then the user chooses the related csv file:
+
+![daisy_36](https://github.com/Trigenaris/library-management-system/assets/122381599/57d7131b-9267-4147-8bcd-6b2f38f6ff19)
+
+After the successful registration, the user can check the updated lists of the books and the members:
+
+![daisy_37](https://github.com/Trigenaris/library-management-system/assets/122381599/df47417c-fd1e-4522-a7d2-0b6906da5d41)
+
+Updated Lists:
+
+![daisy_38](https://github.com/Trigenaris/library-management-system/assets/122381599/1047d9ee-9417-4ba1-a6ff-63d15c7e5a0e)
+![daisy_39](https://github.com/Trigenaris/library-management-system/assets/122381599/6fb3ef5e-df91-4bf9-9454-aefb30013aad)
+
+
+
+
+
+
+
+
 
 
 
