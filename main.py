@@ -106,7 +106,7 @@ class Library:
         """
         Check if a book with the same ISBN already exists in the database.
         :param book (Book): The book object to validate.
-        :return: resul: The result of the validation query.
+        :return: result: The result of the validation query.
         """
         self.cursor.execute('SELECT ID FROM BOOKS WHERE ISBN = ?', (book.isbn,))
         result = self.cursor.fetchone()
@@ -259,6 +259,17 @@ class Library:
         self.cursor.execute("SELECT * FROM MEMBERS")
         members = self.cursor.fetchall()
         return members
+
+    def select_one_book(self, title):
+        """
+        Retrieve the selected book from the database.
+        :param book_title (str): The title of the book to be borrowed.
+        :return: (obj) Returns a book object.
+        """
+        book_id = self._get_book_id(title)
+        if book_id:
+            book = self.cursor.execute('SELECT TITLE FROM BOOKS WHERE ID=?', (book_id,)).fetchone()
+            return book if book else None
 
     def lent_books(self):
         """
@@ -761,9 +772,11 @@ class LibraryGUI:
                                             Member No: {member_no}
                                             """)
                 if confirm:
-                    if self.library.lend_book(title=book_title, member_no=member_no):
+                    if self.library.lend_book(title=book_title, member_no=member_no) and self.library.select_one_book(title=book_title):
                         messagebox.showinfo("Successful!", "The book has lent to the member successfully!")
                         lend_book_window.destroy()
+                    elif not self.library.select_one_book(title=book_title):
+                        messagebox.showerror("Error!", "The book cannot be found.")
                     else:
                         messagebox.showerror("Error!", "The book is already lent to another member.")
             else:
