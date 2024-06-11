@@ -549,12 +549,21 @@ class LibraryGUI:
             Gets multiple entries to create a book instance.
             :return: None
             """
-            title = title_entry.get()
-            author = author_entry.get()
-            publisher = publisher_entry.get()
-            published_year = published_year_entry.get()
-            rating = rating_entry.get()
-            isbn = isbn_entry.get()
+            try:
+                title = title_entry.get()
+                author = author_entry.get()
+                publisher = publisher_entry.get()
+                published_year = int(published_year_entry.get())
+                rating = float(rating_entry.get())
+                isbn = isbn_entry.get()
+                if rating > 5 or rating < 1:
+                    raise Exception
+            except (ValueError, TypeError):
+                messagebox.showerror(title="Error!", message="Published year and rating must be entered as number.")
+                return
+            except Exception:
+                messagebox.showerror(title="Error!", message="Rating must be between 1 - 5.")
+                return
 
             if title and author and publisher and published_year and rating and isbn:
                 confirm = messagebox.askyesno("Confirmation",
