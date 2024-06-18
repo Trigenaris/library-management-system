@@ -345,7 +345,11 @@ class LibraryGUI:
         self.root = root
         self.root.title("Library Management System")
         self.root.config(padx=20, pady=20, bg="white")
-        self.root.geometry("660x500")
+        self.display_width = root.winfo_screenwidth()
+        self.display_height = root.winfo_screenheight()
+        self.left = int(self.display_width / 2 - (660 / 2))
+        self.top = int(self.display_height / 2 - (500 / 2))
+        self.root.geometry(f"660x500+{self.left}+{self.top}")
         self.root.resizable(False, False)
 
         self.title_label = ttk.Label(root, text="Daisy Library Management",
@@ -830,8 +834,10 @@ class LibraryGUI:
                     if self.library.return_book(title=book_title):
                         messagebox.showinfo("Successful!", "The book has brought back to the library successfully!")
                         return_book_window.destroy()
-                    else:
+                    elif self.library.select_one_book(title=book_title):
                         messagebox.showerror("Error!", "The book is already in the library.")
+                    else:
+                        messagebox.showerror("Error!", "The book cannot be found in the library.")
             else:
                 messagebox.showerror("Error", "Please fill in all fields.")
 
