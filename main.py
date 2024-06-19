@@ -271,6 +271,17 @@ class Library:
             book = self.cursor.execute('SELECT TITLE FROM BOOKS WHERE ID=?', (book_id,)).fetchone()
             return book if book else None
 
+    def select_one_member(self, member_no):
+        """
+        Retrieve the selected member from the database.
+        :param member_no (int): The title of the member to be borrowed.
+        :return: (obj) Returns a member object.
+        """
+        member_id = self._get_member_id(member_no)
+        if member_id:
+            member = self.cursor.execute('SELECT * FROM MEMBERS WHERE ID=?', (member_id,)).fetchone()
+            return member if member else None
+
     def lent_books(self):
         """
         Retrieve all lent books along with member information from the database.
@@ -790,6 +801,8 @@ class LibraryGUI:
                         lend_book_window.destroy()
                     elif not self.library.select_one_book(title=book_title):
                         messagebox.showerror("Error!", "The book cannot be found.")
+                    elif not self.library.select_one_member(member_no):
+                        messagebox.showerror("Error!", "The member cannot be found.")
                     else:
                         messagebox.showerror("Error!", "The book is already lent to another member.")
             else:
