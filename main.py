@@ -384,7 +384,7 @@ class LibraryGUI:
         self.paned_window_button.grid(row=3, column=0, rowspan=2, padx=10, pady=10)
         self.paned_window = tk.PanedWindow(root, orient=tk.HORIZONTAL, bg="white")
 
-        self.quit_button = ttk.Button(root, text="Exit", command=exit)
+        self.quit_button = ttk.Button(root, text="Exit", command=self.exit)
         self.quit_button.grid(row=3, column=2)
 
         self.add_book_button = ttk.Button(self.paned_window, text="Add Book", command=self.adding_book)
@@ -565,9 +565,9 @@ class LibraryGUI:
             :return: None
             """
             try:
-                title = title_entry.get()
-                author = author_entry.get()
-                publisher = publisher_entry.get()
+                title = title_entry.get().strip()
+                author = author_entry.get().strip()
+                publisher = publisher_entry.get().strip()
                 published_year = int(published_year_entry.get())
                 rating = float(rating_entry.get())
                 isbn = isbn_entry.get()
@@ -624,7 +624,7 @@ class LibraryGUI:
             Gets the entry to process next functions argument.
             :return: None
             """
-            title = title_entry.get()
+            title = title_entry.get().strip()
 
             if title:
                 confirm = messagebox.askyesno("Confirmation",
@@ -689,12 +689,12 @@ class LibraryGUI:
             Gets multiple entries to create a member instance.
             :return: None
             """
-            first_name = first_name_entry.get()
-            last_name = last_name_entry.get()
-            email = email_entry.get()
-            gender = gender_entry.get()
-            state = state_entry.get()
-            member_no = member_no_entry.get()
+            first_name = first_name_entry.get().strip()
+            last_name = last_name_entry.get().strip()
+            email = email_entry.get().strip()
+            gender = gender_entry.get().strip()
+            state = state_entry.get().strip()
+            member_no = member_no_entry.get().strip()
 
             if first_name and last_name and email and gender and state and member_no:
                 confirm = messagebox.askyesno("Confirmation",
@@ -742,7 +742,7 @@ class LibraryGUI:
             Gets the entry to process next functions argument.
             :return: None
             """
-            member_no = member_no_entry.get()
+            member_no = member_no_entry.get().strip()
 
             if member_no:
                 confirm = messagebox.askyesno("Confirmation",
@@ -786,8 +786,8 @@ class LibraryGUI:
             Gets the entries to process next functions arguments.
             :return: None
             """
-            book_title = book_title_entry.get()
-            member_no = member_no_entry.get()
+            book_title = book_title_entry.get().strip()
+            member_no = member_no_entry.get().strip()
 
             if book_title and member_no:
                 confirm = messagebox.askyesno("Confirmation",
@@ -836,7 +836,7 @@ class LibraryGUI:
             Gets the entry to process next functions argument.
             :return: None
             """
-            book_title = book_title_entry.get()
+            book_title = book_title_entry.get().strip()
 
             if book_title:
                 confirm = messagebox.askyesno("Confirmation",
@@ -889,6 +889,7 @@ class LibraryGUI:
         Close the database connection and exit the application.
         :return: None
         """
+        print("database connection closed.")
         self.library.conn.close()
         self.root.destroy()
 
