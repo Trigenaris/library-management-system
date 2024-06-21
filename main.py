@@ -2,6 +2,7 @@ import os
 import sqlite3
 import csv
 import webbrowser
+import datetime
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
@@ -573,11 +574,15 @@ class LibraryGUI:
                 isbn = isbn_entry.get()
                 if rating > 5 or rating < 1:
                     raise Exception
+                if published_year < 1850 or published_year > datetime.date.today().year:
+                    raise Exception
             except (ValueError, TypeError):
                 messagebox.showerror(title="Error!", message="Published year and rating must be entered as number.")
                 return
             except Exception:
-                messagebox.showerror(title="Error!", message="Rating must be between 1 - 5.")
+                messagebox.showerror(title="Error!",
+                                     message="""Rating must be between 1 - 5
+Published year must be between 1850 - Current Year""")
                 return
 
             if title and author and publisher and published_year and rating and isbn:
