@@ -891,18 +891,29 @@ Published year must be between 1850 - Current Year""")
 
     def exit(self):
         """
-        Close the database connection and exit the application.
+        Exits the application.
         :return: None
         """
-        print("database connection closed.")
-        self.library.conn.close()
         self.root.destroy()
+
+    def connection_close(self):
+        """
+        Close the database connection.
+        :return: None
+        """
+        print("Database connection is closed.")
+        self.library.conn.close()
 
 
 def main():
-    root = tk.Tk()
-    app = LibraryGUI(root)
-    app.root.mainloop()
+    try:
+        root = tk.Tk()
+        app = LibraryGUI(root)
+        app.root.mainloop()
+    except Exception as e:
+        print("Error: ", e)
+    finally:
+        app.connection_close()
 
 
 if __name__ == "__main__":
